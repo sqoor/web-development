@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Excercise #4</title>
+		<style type="text/css">
+			fieldset {
+				width: 500px;
+				background-color: aqua;
+				margin: auto;
+			}
+
+			label {
+				display: inline-block;
+				width: 140px;
+				text-align: right
+			}
+
+			button {
+				display: block;
+				margin: auto
+			}
+		</style>
+	</head>
+	<body>
+		<form action="">
+			<fieldset>
+				<legend>Personal details</legend>
+				<label>Frist name: </label>
+				<input type="text" name="firstname">
+				
+				<br>
+
+				<label>Last name: </label>
+				<input type="text" name="lastname">
+
+				<br>
+
+				<label>Email: </label>
+				<input type="email" name="email">
+				<br>
+
+				<label>Gender:</label>
+				<input type="radio" name="gender" value="male">
+				Male
+				<input type="radio" name="gender" value="female">
+				Female
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Magazines</legend>
+				<input type="checkbox" name="">Stavanger Aftenblad <br>
+				<input type="checkbox" name="">Teknish Ukeblad <br>
+				<input type="checkbox" name="">Se og Hør <br>
+				<input type="checkbox" name="">Familien <br>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Subscription</legend>
+				<label>Period: </label>
+				<select>
+				  <option value="six-months">6 months</option>
+				  <option value="twelve-months">12 months</option>
+				  <option value="eighteen">18 months</option>
+				  <option value="twnety-four-months">24 6 months</option>
+				</select>
+			</fieldset>
+
+			<button>Subscribe</button>
+			
+		</form>
+	</body>
+</html>
