@@ -3,10 +3,38 @@
 <head>
     <title>Exercise #1: Hiding from a list</title>
     <style>
-        ul {
+		ul {
+			padding-left: 0;
+		}         
+
+        ul li {
             list-style-type: none;
-            float: right;
+            background-color: blue;
+            border: solid 1px black;
+	        text-align: center;
+	        width: 3em;
+	        color: white;
+	        font-weight: bold;
+	        float: left;
+	        margin-left: 1%;
         }
+
+        ul li:nth-child(odd) {
+        	display: none;
+        }
+
+        /*Prime hidden elements of list*/
+        li {
+        	visibility: hidden;
+        }
+
+        li:first-child,
+        li:nth-child(2n + 4),
+	 	li:nth-child(3n + 6),
+		li:nth-child(4n + 8),
+		li:nth-child(5n + 10) {
+		    visibility: visible;
+		}
     </style>
 </head>
 <body>
