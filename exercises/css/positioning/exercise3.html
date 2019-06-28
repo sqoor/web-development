@@ -8,6 +8,28 @@
         }
 
         /* add CSS here*/
+        article {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+            margin: 10px;
+            overflow-y: scroll;
+            scrollbar-color: transparent transparent
+        }
+        .promo {
+            width: 100%;
+            font-weight: bold;
+            height: 50px;
+            background-color: inherit;
+            border-bottom: 1px solid red;
+            border-top: 1px solid red;
+            padding: 10px 0;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
+        }
     </style>
 </head>
 <body>
