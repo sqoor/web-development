@@ -1,1 +1,31 @@
 /* this is for you to complete */
+
+ul ul li {
+	color: blue;
+}
+
+ul ul ul li {
+	list-style-type: none;
+}
+
+ul > li:first-of-type {
+	font-weight: bold
+}
+
+a {
+	color: green;
+}
+
+ul a {
+	color: red
+}
+
+div + div p a {
+	background-color: yellow;
+	color: purple;
+}
+
+
+
+
+
