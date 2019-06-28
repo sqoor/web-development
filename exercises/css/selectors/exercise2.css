@@ -1,0 +1,31 @@
+body {
+    background-color: #f0f8ff
+}
+
+div {
+    width: 75%;
+    min-width: 500px;
+    border: solid 1px #333333;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: white;
+    box-shadow: 5px 5px;
+    border-radius: 15px
+}
+
+div p span {
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+#alert {
+    border: dashed 5px; color: red
+}
+
+.hl1 {
+    background-color: #fdca96
+}
+
+.hl2 {
+    background-color: #fdfd96
+}
