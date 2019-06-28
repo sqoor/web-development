@@ -79,20 +79,23 @@ Complete the external css file `exercise4.css`.
 
 Compute the specificity scores
 
-  1. `* { }`
-  1. `li { }`
-  1. `li:first-line { }`
-  1. `ul li { }`
-  1. `ul ol+li { }`
-  1. `h1 + *[rel=up] { }`
-  1. `ul ol li.red { }`
-  1. `li.red.level { }`
-  1. `style=""`
-  1. `p { }`
-  1. `div p { }`
-  1. `.sith`
-  1. `div p.sith { }`
-  1. `#sith`
-  1. `body #darkside .sith p { }`
+  1. `* { }`							0
+  2. `li { }`							1
+  3. `li:first-line { }`				2				
+  4. `ul li { }`						2
+  5. `ul ol+li { }`						3
+  6. `h1 + *[rel=up] { }`				11
+  7. `ul ol li.red { }`					13				
+  8. `li.red.level { }`					21
+  9. `style=""`							1000
+  10. `p { }`							1
+  11. `div p { }`						2
+  12. `.sith`							10
+  13. `div p.sith { }`					12
+  14. `#sith`							100
+  15. `body #darkside .sith p { }`		112
   
+
+  // https://slicejack.com/quick-guide-to-css-specificity/
+  // https://www.phase2technology.com/blog/css-specificity-scoring
   
