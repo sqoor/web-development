@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Exercise #3: Styling boxes</title>
-    <style>
-        div {
-            width: 50px;
-            height: 50px;
-            border: 1px solid black;
-            margin: 5px;
-            float: left; /* float divs next to each other */
-            font-family: Verdana, sans-serif;
-            font-weight: bold;
-            line-height: 50px; /* align text vertically (this works only for a single line of text) */
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-<div>1</div>
-<div>2</div>
-<div>3</div>
-<div>4</div>
-<div>5</div>
-<div>6</div>
-<div>7</div>
-<div>8</div>
-<div>9</div>
-<div>10</div>
-</body>
+    <head>
+        <title>Exercise #3: Styling boxes</title>
+        <style>
+            div {
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                margin: 5px;
+                float: left; /* float divs next to each other */
+                font-family: Verdana, sans-serif;
+                font-weight: bold;
+                line-height: 50px; /* align text vertically (this works only for a single line of text) */
+                text-align: center;
+            }
+
+            div.even {
+                background-color: #0033cc;
+            }
+
+            div.odd {
+                background-color: #ff3333
+            }
+            
+            div:nth-last-child(-n + 3) {
+                /*select first three elements 1 to 3*/
+                font-size: 0.7em;
+            }
+
+            div:nth-child(-n + 3) {
+                /*select last three elements 8 to 10*/
+                font-size: 1.3em;
+            }
+
+            div:nth-child(n + 4):nth-child(-n + 6) {
+                /*select elements from 4 to 6*/
+                font-size: 1em;
+            }
+            
+            div#lucky7 {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="odd">1</div>
+        <div class="even">2</div>
+        <div class="odd">3</div>
+        <div class="even">4</div>
+        <div class="odd">5</div>
+        <div class="even">6</div>
+        <div class="odd" id="lucky7">7</div>
+        <div class="even">8</div>
+        <div class="odd">9</div>
+        <div class="even">10</div>
+    </body>
 </html>
