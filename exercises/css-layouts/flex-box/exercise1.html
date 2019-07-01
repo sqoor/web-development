@@ -3,16 +3,43 @@
 	<head>
 		<title>Exercise #1: Simple flexbox Layout</title>
 		<style>
+			body {
+				margin: 0;
+			}
+
 			div {
 				padding: 200px;
-				height: 300px;
-				width: 300px
+			}
+
+			div#container {
+				padding: 0;
+				display: flex;
+			}
+
+			div#div1 {
+				background-color: #dd5521;
+			}
+
+			div#div2 {
+				background-color: #e84751;
+			}
+
+			div#div3 {
+				background-color: #d6a24f;
+			}
+
+			div#div4 {
+				background-color: #a4c960;
 			}
 		</style>
 	</head>
 	<body>
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
+		<div id="container">
+			<div id="div1">I am a flexbox 1</div>
+			<div id="div2">I am a flexbox 2</div>
+			<div id="div3">I am a flexbox 3</div>	
+			<div id="div4">I am a flexbox 4</div>	
+		</div>
+		
 	</body>
 </html>
