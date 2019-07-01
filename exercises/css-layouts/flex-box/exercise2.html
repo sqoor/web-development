@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Exercise #2: Pagniation</title>
+		<style>
+			body {
+				background-color: #39b2aa;
+			}
+
+			div#container {
+				background-color: white;
+				width: 65%;
+				padding: 7%;
+				text-align: center;
+
+				/*centering the div itself*/
+				position: absolute;
+				left: 10%;
+
+
+				box-shadow: 3px 3px grey;
+			}
+
+			h1 {
+				font-weight: 100;
+			}
+
+			div#pagination {
+				display: flex;
+				justify-content: center
+			}
+
+			div#pagination div {
+				height: 20px;
+				width: 20px;
+				padding: 3px;
+				border: solid .5px grey;
+				color: white;
+				background-color: #39b2aa;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Responsive Pagination</h1>
+			<p>I'm a responsive page link menu built with Felxbox!</p>
+
+			<div id="pagination">
+				<div><<</div>
+				<div><</div>
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>7</div>
+				<div>8</div>
+				<div>9</div>
+				<div>10</div>
+				<div>></div>
+				<div>>></div>
+			</div>
+		</div>	
+	</body>
+</html>
