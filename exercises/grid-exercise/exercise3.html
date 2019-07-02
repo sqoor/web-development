@@ -10,13 +10,34 @@
 				display: grid;
 				background-color: #ccc;
 				padding: 20px;
+				width: 100%;
 
-				grid-template-columns: 20% 1fr;
+				grid-template-columns: 20% 80%;
+				grid-column-gap: 100px
 			}
 
 			textarea {
 				height: 100px;
 				width: 200px;
+			}
+
+			div#comments {
+				grid-row: 1/5;
+			}
+
+			input {
+				width: 80%;
+				height: 20px;
+			}
+
+			button {
+				width: 80%;
+				margin-top: 2%;
+				background-color: grey;
+			}
+
+			label {
+				display: block;
 			}
 		
 		</style>
