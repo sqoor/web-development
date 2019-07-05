@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="abdullah alsqoor">
+		<meta name="description" content="exercise 3 css-layout/flexbox">
+		<title>Exercise #4: Google Hangout Chat Page</title>
+		<style>
+			body {
+				background-color: #bbb;
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			section#container {
+				display: flex;
+				flex-flow: column wrap;
+				max-width: 30%;
+			}
+
+			article.receiver {
+				align-self: flex-end;
+			}
+
+			section article {
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: flex-end;
+
+				margin: 10px;
+				max-width: 72%;
+			}
+
+			.receiver img {
+				order: 1;
+			}
+
+
+			section article img {
+				max-width: 50px;
+				max-height: 50px;
+			}
+
+			section article p {
+				background-color: white;
+				font-size: small;
+
+				min-height: 50px;
+				padding: 0px 5px 0 5px;
+				margin: 0;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				justify-content: flex-end;
+			}
+
+			section article p span {
+				color: #83807F;
+				font-size: x-small;
+				margin-top: 10px
+			}
+		</style>
+	</head>
+	<body>
+		<section id="container">
+			<article class="sender">
+				<img src="https://via.placeholder.com/100" alt="image">
+				<p>Hello!<span>6 minutes ago</span></p>
+			</article>
+			
+			<article class="sender">
+				<img src="https://via.placeholder.com/50" alt="image">
+				<p>What is going on here? <span>5 minutes ago</span></p>
+			</article>
+
+			<article class="receiver">
+				<img src="https://via.placeholder.com/50" alt="image">
+				<p>I have no idea.<span>5 minutes ago</span></p>
+			</article>
+
+			<article class="sender">
+				<img src="https://via.placeholder.com/50" alt="image">
+				<p>I have neat Idea. Maybe I should explian it to you in details<span>5 minue sago</span></p>
+			</article>
+
+			<article class="receiver">
+				<img src="https://via.placeholder.com/50" alt="image">
+				<p>Sure thing. The more details the better. In fact, if you could provide definitions for every single term you use, that would be terrific!<span>2 minutes ago</span></p>
+			</article>
+		</section>
+	</body>
+</html>
