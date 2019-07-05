@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="abdullah alsqoor">
+		<meta name="description" content="exercise 5 css-layout/flexbox">
+		<title>Exercise #5: Flexy Product Cards</title>
+		<style>
+			section#products {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+		    	align-items: center;
+			}
+
+			div {
+				box-shadow: 3px 3px grey;
+				margin: 10px;
+				border: 1px solid black;
+				min-height: 40%;
+				width: 30%;
+			}
+
+		    .triangle {
+		      	background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+		    }
+
+		    div img {
+		    	width: 50%;
+		    }
+
+		    div {
+		    	
+		    	display: flex;
+		    	flex-flow: column wrap;
+		    	justify-content: center;
+		    	align-items: center;
+
+		    	font-weight: bold;
+		    	color: white;
+		    	font-size: small;
+		    }
+
+		    div p {
+		    	margin: 0;
+		    }
+		  	
+		  	.different {
+		  		/*order: -1;*/
+		  		min-height: 62%;
+				width: 42%; 
+		  	}
+		</style>
+	</head>
+	<body>
+		<section id="products">
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle different">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle different">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>
+			<div class="triangle">
+				<img src="https://www.maxpixel.net/static/photo/1x/Png-Milk-Can-Isolated-White-1990084.png" alt="product image">
+				<h2>Milk Jar</h2>
+				<p>Organic milk directly from our farms</p>
+				<p>Price &dollar;99.9</p>
+			</div>	
+		</section>
+	</body>
+</html>
