@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="abdullah alsqoor">
+		<meta name="description" content="exercise 3 css-layout/flexbox">
+		<title>Exercise #3: Masonry layout</title>
+		<style>
+			body {
+				background-color: #db133d;
+			}
+
+			article {
+				background-color: white;
+				width: 350px;
+				height: 100%;
+				margin:  10px;
+			}
+
+			article div {
+				padding: 10px;
+			}
+
+			div#flex-container {
+				display: flex;
+				flex-flow: row wrap;
+				align-items: flex-start;
+			}
+
+
+			/*1: 1, 4;*/
+			/*2: 2,5,7;*/
+			/*3: 3,6;*/
+
+			#col-1  {
+				display: flex;
+				flex-flow: column wrap;
+			}
+
+			#col-2 {
+				display: flex;
+				flex-flow: column wrap;
+			}
+
+			#col-3 {
+				display: flex;
+				flex-flow: column wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="flex-container">
+
+			<div id="col-1">
+				<article id="article1">
+					<img src="http://via.placeholder.com/350x150" alt="random image">
+					<div>
+						<h2>Some title</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<a href="#">Read More</a>
+					</div>
+				</article>
+
+				<article id="article4">
+					<img src="http://via.placeholder.com/350x220" alt="random image">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#">Read More</a>
+					</div>
+				</article>
+			</div>
+
+			<div id="col-2">
+				<article id="article2">
+					<img src="http://via.placeholder.com/350x100" alt="random image">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</article>
+				<article id="article5">
+					<img src="http://via.placeholder.com/350x230" alt="random image">
+					<div>
+						<h2>A little longer Title</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+						<a href="#">Read More</a>
+					</div>
+				</article>
+				<article id="article7">
+					<img src="http://via.placeholder.com/350x150" alt="random image">
+					<div>
+						<h2>Some title</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<a href="#">Read More</a>
+					</div>
+				</article>
+			</div>
+
+			<div id="col-3">
+				<article id="article3">
+					<img src="http://via.placeholder.com/350x100" alt="random image">
+					<div>
+						<h2>A Title</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+						<a href="#">Read More</a>
+					</div>
+				</article>
+				<article id="article6">
+					<img src="http://via.placeholder.com/350x350" alt="random image">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<a href="#">Read More</a>
+					</div>
+				</article>
+			</div>
+
+		</div>
+	</body>
+</html>
